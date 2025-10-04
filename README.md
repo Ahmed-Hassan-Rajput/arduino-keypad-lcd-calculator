@@ -1,4 +1,3 @@
 This Arduino sketch implements a simple 4×4-keypad calculator with a 16×2 HD44780 LCD. It uses the Keypad and LiquidCrystal libraries to scan a matrix keypad, build two operands as strings, and perform +, −, ×, and ÷ when = is pressed. 
 A small state machine routes digits to the first or second operand based on whether an operator has been selected; the second operand enables calculation. Inputs are converted to floats for arithmetic, with a divide-by-zero guard. 
-The LCD shows the first number (and operator) on the top row and the second number on the bottom row, right-aligned like a real calculator. 
-The C key resets all state and clears the display. Wiring is configurable in the `rowPins/colPins` arrays (keypad) and the LiquidCrystal constructor (LCD).
+The LCD shows the first number (and operator) on the top row and the second number on the bottom row, right-aligned like a real calculator and the C key resets all state and clears the display.
